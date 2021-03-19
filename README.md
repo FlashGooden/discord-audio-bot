@@ -13,5 +13,5 @@ of the bot to be able handle adding mp3 files or whatever sound clips they want 
 ## What technologies are going to build this thing?
 
 I'm thinking of having my express backend, which will be spinned up to house my bot and it's logic. I feel like I'm going to need some sort of place to house my mp3
-files for the bot(cloud API or local mp3 library).... I may also need a front end to have the admin control which sounds the bot can play.... I may use React or
+files for the bot(cloud API or local mp3 library).... I may also need a front end so the admin can control which sounds the bot can play.... I may use React or
 some front end library. The MVP should be us being able to type in the Discord chat and having the sound / music played into the channel. 
