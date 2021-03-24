@@ -8,7 +8,7 @@ and in the application they have this "Voice Channel" chat room. Within this voi
 the participants. In a discord channel a bot can be in a room and they will be able to take commands from the chat thread. I would love to design a logic 
 for interacting with this bot and the many sounds it can play. I feel like this would be a cool thing in a chat room, do you want to play some music...... 
 just tell the discord bot. Do you wanna play a short sound effect when someone says something silly in your discord....... tell the discord bot. I want the admin
-of the bot to be able handle adding mp3 files or whatever sound clips they want to the bot's "Music list" or something. 
+of the bot to be able handle adding mp3 files or whatever sound clips they want to the bot's "Music list" or something. An example of a bot might be something like [Discord Geo Music](https://discordbotlist.com/bots/discord-music).
 
 ## What technologies are going to build this thing?
 
@@ -23,5 +23,6 @@ some front end library. The MVP should be us being able to type in the Discord c
 - Receive a command that lets the bot play the file
 - search through a list of songs for a match???
 - Bot should be able to be controlled from a UI
+- Deploy bot to Heroku?? or other service
 
 
