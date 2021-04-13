@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/Gamerman2001/discord-audio-bot#readme",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^7.24.0"
