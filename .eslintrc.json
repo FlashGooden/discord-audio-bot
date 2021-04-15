@@ -5,7 +5,11 @@
 		"es6": true
 	},
 	"parserOptions": {
-		"ecmaVersion": 2019
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "ecmaFeatures": {
+    "globalReturn": false
 	},
 	"rules": {
 		"brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
@@ -44,4 +48,5 @@
 		"spaced-comment": "error",
 		"yoda": "error"
 	}
+}
 }
