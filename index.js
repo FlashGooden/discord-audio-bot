@@ -4,13 +4,13 @@ import play from './Commands/Play.js'
 import help from './Commands/Help.js'
 import list from './Commands/List.js'
 
+//setup and config 
 const client = new Discord.Client();
 dotenv.config();
 
 const { BOTPREFIX } = process.env;
 const { TOKEN } = process.env;
 const commandList = {play, help, list}
-
 
 client.once("ready", () => console.log("ready"));
 
@@ -27,7 +27,7 @@ client.on("message", (message) => {
 
    try {
       //using computed property to call command sent in chatroom
-      commandList[command]()
+      commandList[command](message)
    } catch (error) {
       return message.channel.send(`you need to use a command from the list ${error}`)
    }
