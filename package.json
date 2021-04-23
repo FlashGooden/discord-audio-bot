@@ -32,6 +32,7 @@
     "xhr2": "^0.2.1"
   },
   "devDependencies": {
-    "eslint": "^7.24.0"
+    "eslint": "^7.24.0",
+    "jest": "^26.6.3"
   }
 }
