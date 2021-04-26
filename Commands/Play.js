@@ -34,32 +34,47 @@ const fireBaseJazz = async () =>
 
 // const mp3Path = path.resolve( "/Users/flashgooden/Desktop/Sparkbox Development/apprentice-repo/discord-audio-bot/assets/CatSound.mp3");
 
-const playMp3 = async (roomConnection, arg) => {
-   arg === "cat"
-      ? roomConnection
-           .play(await firebaseCat(), { volume: 1 })
-           .on("finish", () => {
-              console.log("Finished playing!");
-           })
-      : arg === "replay"
-      ? roomConnection
-           .play(await firebaseBattle(), { volume: 1 })
-           .on("finish", () => {
-              console.log("Finished playing!");
-           })
-      : arg === "fight"
-      ? roomConnection
-           .play(await fireBaseFight(), { volume: 1 })
-           .on("finish", () => {
-              console.log("Finished playing!");
-           })
-      : arg === "jazz"
-      ? roomConnection
-           .play(await fireBaseJazz(), { volume: 1 })
-           .on("finish", () => {
-              console.log("Finished playing!");
-           })
-      : null;
+export const playMp3 = async (roomConnection, arg) => {
+   switch (arg) {
+      case "cat":
+         roomConnection
+            .play(await firebaseCat(), { volume: 1 })
+            .on("finish", () => {
+               console.log("Finished playing!");
+            });
+         break;
+      case "replay":
+         roomConnection
+            .play(await firebaseBattle(), { volume: 1 })
+            .on("finish", () => {
+               console.log("Finished playing!");
+            });
+         break;
+      case "jazz":
+         roomConnection
+            .play(await fireBaseJazz(), { volume: 1 })
+            .on("finish", () => {
+               console.log("Finished playing!");
+            });
+         break;
+      case "helicopter":
+         roomConnection
+            .play(await fireBaseHelicopter(), { volume: 1 })
+            .on("finish", () => {
+               console.log("Finished playing!");
+            });
+         break;
+      case "fight":
+         roomConnection
+            .play(await fireBaseFight(), { volume: 1 })
+            .on("finish", () => {
+               console.log("Finished playing!");
+            });
+         break;
+      default:
+         null;
+   }
+  
 };
 
 const userInVoiceChannel = (message) =>
